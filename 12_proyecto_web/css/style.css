@@ -1,0 +1,278 @@
+/*selector universal*/
+{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+/*reset css*/
+h1,h2,h3,h4,h5,h6,figure,p 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+    /*margin: 0; aplica a todos */
+    /*margin: 0 0; el primero aplica top-botton y el segundo right-left*/
+    /*margin: 0 0 0; top right-left botton*/
+    /*margin: 0 0 0 0; top right botton left*/
+    /*margin-top, margin-right, margin-botton, margin-left*/
+}
+
+/*ENCABEZADO INICIO*/
+#encabezado
+{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+}
+
+#encabezado figure
+{
+    margin: 0;
+}
+
+#titulos*
+{
+    margin: 0;
+}
+
+#lupita
+{
+    display: flex;
+}
+
+#busqueda
+{
+    display: inline-block;
+    float: left;
+}
+
+#encabezado h1 {font-size: 1.2em;}
+#encabezado h2 {font-size: 1em;}
+#encabezado h3 {font-size: 0.9em;}
+#encabezado h4 {font-size: 0.8em;}
+
+/*ENCABEZADO FIN*/
+
+/*MENU INICIO*/
+#menu
+{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+#menu li 
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+#manu ul
+{
+    padding: 0;
+}
+
+#menu>ul>li
+{
+   display: inline-block;
+}
+
+/*quita subrayado*/
+#manu li a
+{
+    text-decoration: none;
+    color:black;
+}
+
+#menu>ul>li>a
+{
+    padding: 10px;
+    background-color: gainsboro;
+    transition: 0.5s;
+}
+
+#menu>ul>li>a:hover
+{
+    background-color: darkgray;
+}
+
+/* oculta objetos*/
+#manu li ul
+{
+    display: none;
+}
+
+/* MENU FIN*/
+
+#contenido
+{ 
+}
+
+/* NOTA IMPORTANTE INICIO*/
+#nota-importante
+{
+    height: 360px;
+    background-color: darkturquoise;
+    margin: 20px 0;
+    /*box-shadow: horizontal vertical blur color;*/
+    box-shadow: 0 0 15px grey;
+}
+
+#nota-importante img
+{
+   border: 10px solid white;
+}
+
+/* NOTA IMPORTANTE FIN*/
+
+/* NOTA IMPORTANTE INICIO*/
+
+#notas-secundarias
+{
+    min-height: 300px;
+    width: 700px;
+    display: inline-block;
+    float: left;
+}
+
+#notas-secundarias article
+{
+    display: flex;
+    background-image: url('../images/separador-notas-secundarias.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    margin-right: 15px;
+}
+
+.sombra-img
+{
+    box-shadow: 0px 0px 5px #bdbdbd;
+}
+
+.img-nota-secundaria span
+{
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    padding: 5px 10px;
+    background-color: lightgray;
+}
+
+.titulo-nota-secundaria
+{
+    font-size: 1.7em;
+    line-height: 0.9em;
+    font-variant: small-caps;
+}
+
+.cuerpo-nota-secundaria
+{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.intro-nota-secundaria
+{
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.boton
+{
+    background: #AA3521;
+    display: inline-block;
+    padding: 3px;
+    box-shadow: 0px 1px 3px darkgray;
+}
+
+.boton>div
+{
+    padding: 1px 20px;
+    border: 1px solid rgba(255,255,255,.7)
+}
+
+.boton p
+{
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+/* NOTA SECINDARIA FIN*/
+
+/* PUBLICIDAD INICIO */
+#publicidad
+{
+    height: 300px;
+    width: 220px;
+    display: inline-block;
+    float: right;
+}
+
+#publicudad img
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* PUBLICIDAD FIN */
+
+#pie
+{
+    height: 150px;
+    background-color:  white(255, 0, 147, 0.96);
+}
+
+#logo-sems
+{
+    background-image: url('../images/sems_footer.png');
+    height: 60px;
+    width:  215px;
+    display: block;
+    text-indent:  -9999px;
+    margin: auto;
+}
+
+#separador-sems
+{
+    margin: 30px 0;
+    position: relative;
+}
+
+#logo-sems::before, #logo-sems::after
+{
+    content: "";
+    border-top: 3px double lightgray;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 340;
+    top: 30px;
+}
+
+#logo-sems::after
+{
+    right: 0;
+}
+
+#logo-sems::before
+{
+    left: 0;
+}
+
+#direccion p
+{
+    text-align: center;
+    color: darkgray;
+    font-size: 0.8em;
+}
